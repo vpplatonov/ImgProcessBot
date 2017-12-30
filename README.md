@@ -1,4 +1,4 @@
-#Images Processor Bot
+# Images Processor Bot
 
 The goal of task is to test your php skills. Please write your “best code” to get the
 best contract.
