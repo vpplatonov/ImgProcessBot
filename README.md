@@ -24,7 +24,7 @@ If step fails it should move URL to <code>failed</code> queue. For example, if i
 could not be downloaded right now (e.g. due to network problems)
 corresponding task should be moved to <code>failed</code> queue.
 
-##Requirements
+## Requirements
 
 - Code should be uploaded to public github or bitbucket repository.
 - Code format should conform PSR-2.
@@ -34,14 +34,14 @@ dependencies and autoloading rules.
 - Feel free to choose any storage for queues, e.g. RabbitMQ, beanstalkd or
 any relational database. It should be easy to install it on test machine.
 
-##CLI Script
+## CLI Script
 
 Bot should be implemented as a PHP command line script named <code>bot</code>.
 ```
 $ bot
 ```
 Description of commands are listed below in this section.
-##Scheduler
+## Scheduler
 Accepts a file with list of URLs to download and schedule them for download,
 i.e. adds to <code>download</code> queue. Only <code>http</code> and <code>https</code> protocols are
 supported. If URL is malformed then add it to <code>failed</code> queue instead.
@@ -54,7 +54,7 @@ http://www.example.com/image1.jpg
 https://example.net/image2.png
 http://example.org/image.php?id=123&size=small
 ```
-##Downloader
+## Downloader
 Downloads images from the <code>download</code> queue to local temporary folder. If
 image is not available moves URL to <code>failed</code> queue. May rename
 downloaded image if necessary.
